@@ -24,22 +24,44 @@
   <script src="js/script.js"></script>
   <title>Victor Douay - Développeur web</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="60">
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-aos="fade-down">
-    <div class="nav-brand"><a href="#about"><img src="images/general/me.jpg" class="rounded-circle" style="width: 35px; margin-right: 15px;" alt="">DOUAY VICTOR</a></div>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- <img src="images/general/me.jpg" class="rounded-circle" style="width: 35px; margin-right: 15px;" alt=""> -->
+    <div class="nav-brand"><a href="#about">DOUAY VICTOR</a></div>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">compétences</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">parcours</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
         </ul>
       </div>
   </nav>
+
+  <div class="social">
+    <span class="line"></span>
+    <ul>
+      <li data-aos="fade-down" class="linkedin">
+        <a href="https://www.linkedin.com/in/victor-douay-927639158/" target="_blank">
+				  <i class="fab fa-linkedin-in"></i>
+			  </a>
+      </li>
+      <li data-aos="fade-down" class="github">
+        <a href="https://github.com/wiliamailysh" target="_blank">
+				  <i class="fab fa-github-alt"></i>
+			  </a>
+      </li>
+      <li data-aos="fade-down" class="mail">
+        <a href="https://www.linkedin.com/in/victor-douay-927639158/" target="_blank">
+				  <i class="fas fa-envelope-open-text"></i>
+			  </a>
+      </li>
+    </ul>
+  </div>
 
   <!-- ABOUT SECTION  -->
   <section id="about">
@@ -170,21 +192,21 @@
       <h2>mes compétences</h2>
     </div>
 
-    <div class="container">
+    <div class="container" style="overflow-x: hidden">
       <div class="row">
           <!-- <div class="tech" style="background: url('images/logo/rails.png') no-repeat center; background-size: 80%;"></div> -->
           <div class="col-4 col-md-2"><img data-aos="fade_right" data-aos-delay= "250" class="skills__picture" src="images/logo/rails.png" alt=""></div>
           <div class="col-4 col-md-2"><img data-aos="fade_right" data-aos-delay= "100" class="skills__picture" src="images/logo/html.png" alt=""></div>
           <div class="col-4 col-md-2"><img data-aos="fade_right" class="skills__picture" src="images/logo/css.png" alt=""></div>
-          <div class="col-4 col-md-2"><img data-aos="fade_right" class="skills__picture" src="images/logo/js.png" alt=""></div>
-          <div class="col-4 col-md-2"><img data-aos="fade_right" data-aos-delay= "100" class="skills__picture" src="images/logo/bootstrap.png" alt=""></div>
-          <div class="col-4 col-md-2"><img data-aos="fade_right" data-aos-delay= "250" class="skills__picture" src="images/logo/sass.png" alt=""></div>
+          <div class="col-4 col-md-2"><img data-aos="fade_left" class="skills__picture" src="images/logo/js.png" alt=""></div>
+          <div class="col-4 col-md-2"><img data-aos="fade_left" data-aos-delay= "100" class="skills__picture" src="images/logo/bootstrap.png" alt=""></div>
+          <div class="col-4 col-md-2"><img data-aos="fade_left" data-aos-delay= "250" class="skills__picture" src="images/logo/sass.png" alt=""></div>
           <div class="col-4 col-md-2"><img data-aos="fade_right" data-aos-delay= "300" class="skills__picture" src="images/logo/heroku.png" alt=""></div>
           <div class="col-4 col-md-2"><img data-aos="fade_right" data-aos-delay= "150" class="skills__picture" src="images/logo/git.png" alt=""></div>
           <div class="col-4 col-md-2"><img data-aos="fade_right" class="skills__picture" src="images/logo/postgresql.png" alt=""></div>
-          <div class="col-4 col-md-2"><img data-aos="fade_right" class="skills__picture" src="images/logo/ps.png" alt=""></div>
-          <div class="col-4 col-md-2"><img data-aos="fade_right" data-aos-delay= "150" class="skills__picture" src="images/logo/react.png" alt=""></div>
-          <div class="col-4 col-md-2"><img data-aos="fade_right" data-aos-delay= "300" class="skills__picture" src="images/logo/linux.png" alt=""></div>
+          <div class="col-4 col-md-2"><img data-aos="fade_left" class="skills__picture" src="images/logo/ps.png" alt=""></div>
+          <div class="col-4 col-md-2"><img data-aos="fade_left" data-aos-delay= "150" class="skills__picture" src="images/logo/react.png" alt=""></div>
+          <div class="col-4 col-md-2"><img data-aos="fade_left" data-aos-delay= "300" class="skills__picture" src="images/logo/linux.png" alt=""></div>
     </div>
   </section>
 
@@ -226,7 +248,7 @@
 
   <!-- EXPERIENCE & FORMATION SECTION -->
   <section id="experience">
-    <div class="container">
+    <div class="container" style="overflow: hidden">
 
       <!-- Heading -->
       <div class="experience__heading heading">
@@ -239,9 +261,9 @@
         <li>
           <div data-aos="zoom-in" class="timeline__badge"><span class="fas fa-graduation-cap"></span></div>
           <div class="timeline__container">
-            <div data-aos="fade-right" class="timeline__panel">
+            <div data-aos="fade-left" class="timeline__panel">
               <div class="timeline__heading">
-                <h3><img src="images/experience/thp.png" alt="" style="width: 10rem; position: relative; left: -12px;"></h3>
+                <h3><img src="images/experience/thp.png" alt="" style="width: 10rem; position: relative; left: -5px;"></h3>
                 <h4>Bootcamp de développement web</h4>
                 <p class="text-muted"><small class="far fa-clock"></small> Octobre 2018</p>
               </div>
@@ -262,9 +284,9 @@
         <li>
           <div data-aos="zoom-in" class="timeline__badge"><span class="fas fa-briefcase"></span></div>
           <div class="timeline__container">
-            <div data-aos="fade-right" class="timeline__panel">
+            <div data-aos="fade-left" class="timeline__panel">
               <div class="timeline__heading">
-                <h3><img src="images/experience/nega2.png" alt="" style="width: 10rem;"></h3>
+                <h3><img src="images/experience/nega2.png" alt="" style="width: 10rem; position: relative; left: -5px;"></h3>
                 <h4>Tireur filtreur</h4>
                 <p class="text-muted"><small class="far fa-clock"></small> Octobre 2015 - Octobre 2017</p>
               </div>
@@ -282,7 +304,7 @@
         <li>
           <div data-aos="zoom-in" class="timeline__badge"><span class="fas fa-graduation-cap"></span></div>
           <div class="timeline__container">
-            <div data-aos="fade-right" class="timeline__panel">
+            <div data-aos="fade-left" class="timeline__panel">
               <div class="timeline__heading">
                 <h3><img src="images/experience/cma2.png" alt="" style="width: 10rem;"></h3>
                 <h4>BTM Photographie</h4>
@@ -304,9 +326,9 @@
         <li>
           <div data-aos="zoom-in" class="timeline__badge"><span class="fas fa-briefcase"></span></div>
           <div class="timeline__container">
-            <div data-aos="fade-right" class="timeline__panel">
+            <div data-aos="fade-left" class="timeline__panel">
               <div class="timeline__heading">
-                <h3><img src="images/experience/anom.png" alt="" style="width: 10rem;"></h3>
+                <h3><img src="images/experience/anom.png" alt="" style="width: 10rem; position: relative; left: -5px;"></h3>
                 <h4>Photographe culturel</h4>
                 <p class="text-muted"><small class="far fa-clock"></small> Octobre 2015 - Octobre 2017</p>
               </div>
@@ -325,16 +347,16 @@
         <li>
           <div data-aos="zoom-in" class="timeline__badge"><span class="fas fa-graduation-cap"></span></div>
           <div class="timeline__container">
-            <div data-aos="fade-right" class="timeline__panel">
+            <div data-aos="fade-left" class="timeline__panel">
               <div class="timeline__heading">
-                <h3><img src="images/experience/um3-3.png" alt="" style="width: 10rem;"></h3>
+                <h3><img src="images/experience/um3-3.png" alt="" style="width: 10rem; position: relative; left: 0px;"></h3>
                 <h4>Licence Communication, médiation numérique</h4>
                 <p class="text-muted"><small class="far fa-clock"></small> 2011 - 2015</p>
               </div>
               <div class="timeline__body">
                 <p class="texte-muted">
                   Ingénierie éditoriale - Adobe InDesign<br>
-                  Sémiologie de l'imagex<br>
+                  Sémiologie de l'image<br>
                   Médiation culturelle
                 </p>
               </div>
@@ -351,7 +373,7 @@
           <div class="timeline__container">
             <div data-aos="fade-right" class="timeline__panel">
               <div class="timeline__heading">
-                <h3><img src="images/experience/thp.png" alt="" style="width: 22rem; position: relative; left: -12px;"></h3>
+                <h3><img src="images/experience/thp.png" alt="" style="width: 22rem; position: relative; left: -3px;"></h3>
                 <h4>Bootcamp de développement web</h4>
                 <p class="text-muted"><small class="far fa-clock"></small> Octobre 2018</p>
               </div>
@@ -372,7 +394,7 @@
         <li>
           <div data-aos="zoom-in" class="timeline__badge"><span class="fas fa-briefcase"></span></div>
           <div class="timeline__container--inverted">
-            <div data-aos="fade-right" class="timeline__panel">
+            <div data-aos="fade-left" class="timeline__panel">
               <div class="timeline__heading">
                 <h3><img src="images/experience/nega2.png" alt="" style="width: 22rem;"></h3>
                 <h4>Tireur filtreur</h4>
@@ -392,9 +414,9 @@
         <li>
           <div data-aos="zoom-in" class="timeline__badge"><span class="fas fa-graduation-cap"></span></div>
           <div class="timeline__container">
-            <div data-aos="fade-left" class="timeline__panel">
+            <div data-aos="fade-right" class="timeline__panel">
               <div class="timeline__heading">
-                <h3><img src="images/experience/cma2.png" alt="" style="width: 22rem;"></h3>
+                <h3><img src="images/experience/cma2.png" alt="" style="width: 22rem; position: relative; left: -32px;"></h3>
                 <h4>BTM Photographie</h4>
                 <p class="text-muted"><small class="far fa-clock"></small> Octobre 2015 - Octobre 2017</p>
               </div>
@@ -435,16 +457,16 @@
         <li>
           <div data-aos="zoom-in" class="timeline__badge"><span class="fas fa-graduation-cap"></span></div>
           <div class="timeline__container">
-            <div data-aos="fade-left" class="timeline__panel">
+            <div data-aos="fade-right" class="timeline__panel">
               <div class="timeline__heading">
-                <h3><img src="images/experience/um3-3.png" alt="" style="width: 15rem;"></h3>
+                <h3><img src="images/experience/um3-3.png" alt="" style="width: 15rem; position: relative; left: 0px;"></h3>
                 <h4>Licence Communication, médiation numérique</h4>
                 <p class="text-muted"><small class="far fa-clock"></small> 2011 - 2015</p>
               </div>
               <div class="timeline__body">
                 <p class="texte-muted">
                   Ingénierie éditoriale - Adobe InDesign<br>
-                  Sémiologie de l'imagex<br>
+                  Sémiologie de l'image<br>
                   Médiation culturelle
                 </p>
               </div>
@@ -458,13 +480,13 @@
 
 
 
-  <footer>
+  <!-- <footer class="fixed-bottom">
     <div class="logos">
       <i class="fab fa-github-square"></i>
       <i class="fab fa-linkedin"></i>
       <i class="fas fa-paper-plane"></i>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Load and init AOS Library -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
