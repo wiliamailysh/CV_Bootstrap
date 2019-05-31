@@ -114,19 +114,6 @@ section .heading {
   text-align: center;
 }
 
-.red-divider {
-  width: 100px;
-  height: 2px;
-  background: var(--main-color);
-  margin: 0 auto;
-}
-.white-divider {
-  width: 100px;
-  height: 2px;
-  background: white;
-  margin: 0 auto;
-}
-
 .test {
   background: red;
 }
@@ -263,6 +250,17 @@ font-size: 1rem */
   margin: 2rem auto;
 }
 
+@media screen and (max-width: 992px) {
+  .heading {
+    width: 15rem;
+    background: var(--test-color);
+    margin: 2rem auto;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+
 .heading h2 {
   text-transform: uppercase;
   background: var(--test-color);
@@ -324,7 +322,7 @@ font-size: 1rem */
   width: 5px;
   position: absolute;
   top: 0;
-  left: 10%;
+  left: 20px;
   margin-left: -2.5px;
   height: 100%;
   box-shadow: 0 1px 6px rgba(0,0,0,0.175);
@@ -334,7 +332,7 @@ font-size: 1rem */
   content: " ";
   position: absolute;
   top: 24px;
-  left: 48px;
+  left: 18px;
   /* Triangle right */
   border-top: 18px solid transparent;
   border-right: 13px solid white;
@@ -354,7 +352,7 @@ font-size: 1rem */
   line-height: 50px;
   position: absolute;
   top: 18px;
-  left: 5px;
+  left: -20px;
   margin-left: -25px;
 }
 
@@ -385,9 +383,9 @@ font-size: 1rem */
 .timeline__mobile .timeline__panel {
   /* position: relative; */
   /* float: right; */
-  margin-left: 60px;
+  margin-left: 30px;
   background: white;
-  width: 80%;
+  width: 90%;
   border: 1px solid #d4d4d4;
   border-radius: 7px;
   padding: 20px 25px;
