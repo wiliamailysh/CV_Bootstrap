@@ -1,0 +1,17 @@
+.project {
+  background: var(--main-color);
+  border-radius: 7px;
+  margin-top: 2rem;
+  &:hover {
+    box-shadow: 0 1px 25px rgba(0,0,0,0.175);
+    background: #f7ed62;
+    transform: scale(1.02) !important;
+  }
+  &__image img {
+    width: 100%;
+    padding: 1rem;
+  }
+  &__description {
+    padding: 2rem;
+  }
+}

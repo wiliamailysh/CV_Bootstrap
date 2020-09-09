@@ -1,0 +1,22 @@
+footer {
+  height: 80px;
+  background: white;
+  display: flex;
+  align-items: center;
+  & i {
+    color: rgba(0,0,0,.5);
+    font-size: 1.4rem;
+    transition: all 0.1s;
+    &:hover {
+      color: var(--second-color);
+      transform: scale(1.05);
+    }
+  }
+}
+
+.logos {
+  width: 15%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}

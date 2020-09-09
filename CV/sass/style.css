@@ -1,0 +1,61 @@
+/* Base */
+@import url("./base/_fonts.css");
+@import url("./base/_base.css");
+
+/* Utils */
+@import url("./utils/_variables.css");
+@import url("./utils/_aos-animations.css");
+
+/* Layouts */
+@import url("./layouts/_navbar.css");
+@import url("./layouts/_social.css");
+@import url("./layouts/_about.css");
+@import url("./layouts/_portfolio.scss");
+@import url("./layouts/_skills.scss");
+@import url("./layouts/_experience.css");
+@import url("./layouts/_footer.css");
+
+/* Responsive design */
+@import url("./utils/_responsive.css");
+
+
+.experience__select {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience__select h5 {
+  /* background: var(--third-color); */
+  /* color: white; */
+  text-transform: uppercase;
+  margin: 0 1rem;
+  padding: 0.4rem 1rem;
+  transition: all 0.3ms;
+  position: relative;
+}
+
+.experience__select h5:first-child {
+  background: var(--third-color);
+  color: white;
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
+
+.experience__select h5:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--third-color);
+  transition: width .8s cubic-bezier(.25,1,.35,1);
+  z-index: -1;
+  display: block;
+}
+
+.experience__select h5:hover:after {
+  width: 100%;
+}

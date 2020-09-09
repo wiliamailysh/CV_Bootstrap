@@ -1,0 +1,54 @@
+body {
+  background-color: green !important;
+}
+
+// .skills {
+//   background: var(--main-color);
+//   &__knowledge {
+//     background: var(--main-color);
+//     padding: 50px 0 100px 0;
+//   }
+//   &__techs {
+//     background: white;
+//     padding: 5rem;
+//   }
+// }
+
+// .knowledge {
+//   margin: 10px;
+//   padding: 10px;
+//   background: white;
+//   border-radius: 7px;
+//   box-shadow: 0 1px 25px rgba(0,0,0,0.175);
+//   padding: 2rem;
+//   height: 90%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   &__image {
+//     font-size: 3rem;
+//     text-align: center;
+//     color: var(--third-color);
+//   }
+//   &__title {
+//     font-family: 'Palanquin', sans-serif;
+//     text-transform: uppercase;
+//     text-align: center;
+//     color: var(--second-color);
+//   }
+//   &__text {
+//     text-align: center;
+//     color: var(--second-color);
+//   }
+// }
+
+
+// .tech {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   __image {
+//     width: 80%;
+//     margin-top: 2rem;
+//   }
+// }

@@ -1,0 +1,77 @@
+/* SOCIAL */
+
+.social {
+  &__line {
+    position: fixed;
+  	top: 58px;
+    left: 0px;
+  	width: 100%;
+    height: 4px;
+  	background: var(--third-color);
+  	z-index: 20;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    position: fixed;
+    top: 52px;
+    z-index: 15;
+    & li {
+      width: 44px;
+      height: 50px;
+      background: var(--third-color);
+      position: relative;
+      padding-top: 15px;
+      & a {
+        color: white;
+        font-size: 1.4rem;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+/* Pseudo-elements after & before - Flag */
+
+.social_list li:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 24px solid var(--third-color);
+  border-left: 24px solid transparent;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+.social_list li:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 24px solid var(--third-color);
+  border-right: 24px solid transparent;
+  position: absolute;
+  top: 50px;
+}
+
+.social_list .linkedin:hover:after, .social ul .linkedin:hover:before {
+  border-top: 24px solid #1c66c2;
+}
+.social_list .github:hover:after, .social ul .github:hover:before {
+  border-top: 24px solid #24292e;
+}
+.social_list .mail:hover:after, .social ul .mail:hover:before {
+  border-top: 24px solid var(--second-color);
+}
+
+/* Color for different social background */
+
+.social_list .linkedin:hover {
+  background: #1c66c2;
+}
+.social_list .github:hover {
+  background: #24292e;
+}
+.social_list .mail:hover {
+  background: var(--second-color);
+}
